@@ -1,46 +1,68 @@
-.App {
-    text-align: center;
+* { 
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-* { 
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-
-  /* (*) selector universal */
-
-  .App-logo {
-    height: 40vmin;
-    pointer-events: none;
-  }
-  html, 
-  body {
-    background-color: rgb(126, 6, 86);
-  }
+html,
+body {
+  background-color: rgb(126, 6, 86);
+}
 
 
-  .App {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding-top: 15px;
-    font-family: Lato, sans-serif;
-  }
 
-  .logo-contenedor{
-  width: 100%;
+.App {
+  text-align: center;
+  background-color: rgb(126, 6, 86);
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  margin: 20px;
+  padding-top: 15px;
+  font-family: Lato, sans-serif;
+
+}
+
+.App-header {
+  background-color:  rgb(126, 6, 86);
+  min-height: 100vh;
+}
+
+
+
+ 
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  }
+ 
+
+
+
+
+  .logo-contenedor{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   font-size: calc(10px + 2vmin);
+   color:rgb(126, 6, 86);
+   margin: 20px;
   }
 
   .logo-free{
-    
+    height: 200px;
+
   }
+
+  @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
   
