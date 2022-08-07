@@ -1,8 +1,11 @@
 
 import './App.css';
 import Boton from './componentes/Boton.jsx';
-import logo from './imagenes/logopng.png';
+import logo from './imagenes/cont.png'; 
+import Contador from './componentes/Contador';
 import {useState} from 'react';
+
+
 
 function App() {
 
@@ -17,14 +20,16 @@ function App() {
     console.log('Reiniciar');
     setNumClics(0);
   }
-
+   //Tener en cuenta los ; en las funciones flecha
   return (
     <div className='App'> 
-      <div className='logo-contenedor'>
+        <div className='logo-contenedor'>
         <img className='logo-free'
         src={logo}
         alt='logo'/>
-        <div className='contenedor-principal'>
+      </div>
+      <div className='contenedor-principal'>
+          <Contador numClics={numClics}/>
           <Boton
            texto='Clic'
            esBotonDeClic={true}
@@ -33,15 +38,17 @@ function App() {
            texto='Reiniciar'
            esBotonDeClic={false}
            manejarClic={reiniciarContador} />
-        </div>
-
-      </div>
-    
+      </div>  
     </div>
-  );
-}
+      );
+    }
+    
+
+      
+    
+    
 
 export default App;
 
 //cambiar comillas para ser consistentes.
- /* (*) selector universal */
+// (*) selector universal */

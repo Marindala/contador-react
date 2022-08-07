@@ -1,68 +1,105 @@
-* { 
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+* {
+  padding: 0%;
+  margin: 0%;
+
+} 
+
 
 html,
 body {
-  background-color: rgb(126, 6, 86);
+background-color: rgb(126, 6, 86);
 }
 
 
 
 .App {
   text-align: center;
-  background-color: rgb(126, 6, 86);
-  display: flex;
+   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   padding-top: 15px;
   font-family: Lato, sans-serif;
+  background: linear-gradient(313deg, #3d8dea, #1bcde1, #640cac);
+    background-size: 600% 600%;
 
+    -webkit-animation: AnimationName 36s ease infinite;
+    -moz-animation: AnimationName 36s ease infinite;
+    -o-animation: AnimationName 36s ease infinite;
+    animation: AnimationName 36s ease infinite;
 }
 
-.App-header {
-  background-color:  rgb(126, 6, 86);
-  min-height: 100vh;
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 69%}
+    50%{background-position:100% 32%}
+    100%{background-position:0% 69%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 69%}
+    50%{background-position:100% 32%}
+    100%{background-position:0% 69%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 69%}
+    50%{background-position:100% 32%}
+    100%{background-position:0% 69%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 69%}
+    50%{background-position:100% 32%}
+    100%{background-position:0% 69%}
 }
 
 
+
+.logo-contenedor{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  height: 150px;
+ }
+
+ .logo-free{
+  height: 200px;
+ }
+
+ .contenedor-principal{
+  height: 550px;
+  min-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+ }
+
+ button:hover {
+  background-color: #8366c5;
+}
+
+.boton-clic {
+  background-color:#0e0eec;
+}
+
+.boton-reiniciar {
+  background-color:#0e0eec;
+}
 
  
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-  }
+ 
+ 
+
  
 
 
 
 
-  .logo-contenedor{
-   width: 100%;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   font-size: calc(10px + 2vmin);
-   color:rgb(126, 6, 86);
-   margin: 20px;
-  }
+  
 
-  .logo-free{
-    height: 200px;
+ 
 
-  }
-
-  @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
   
